@@ -10,7 +10,7 @@
 
 
     <div class="gallery_card_container">
-        <div class="mt-5 zoom">
+        <div class="mt-5 zoom card1">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm7.jpg">
@@ -18,14 +18,14 @@
             </div>
         </div>
 
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card2">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm8.jpg">
                 </div>
             </div>
         </div>
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card3">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm9.jpg">
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card4">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm4.jpg">
@@ -44,7 +44,7 @@
     </div>
 
     <div class="gallery_card_container ">
-        <div class="mt-5 zoom">
+        <div class="mt-5 zoom card11">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm10.jpg">
@@ -52,14 +52,14 @@
             </div>
         </div>
 
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card12">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm2.jpg">
                 </div>
             </div>
         </div>
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card13">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm3.jpg">
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card14">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm4.jpg">
@@ -78,7 +78,7 @@
     </div>
 
     <div class="gallery_card_container ">
-        <div class="mt-5 zoom">
+        <div class="mt-5 zoom card21">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm1.jpg">
@@ -86,14 +86,14 @@
             </div>
         </div>
 
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card22">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm2.jpg">
                 </div>
             </div>
         </div>
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card23">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm3.jpg">
@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div class="mt-5 ml-5 zoom">
+        <div class="mt-5 ml-5 zoom card24">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm4.jpg">
@@ -171,4 +171,40 @@
     transform: scale(1.2);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-</style>
+
+/* @media  screen and (min-width<576px) {
+  .card3 .card4 .card13 .card14 .card23 .card24  {
+    display: none;
+  }
+} */
+
+@media (max-width: 576px) { 
+    .card2,.card3,.card4,.card12,.card13,.card14,.card22,.card23,.card24 {
+        display: none;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .card2,.card3,.card4,.card12,.card13,.card14,.card22,.card23,.card24 {
+        display: none;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .card3,.card4,.card13,.card14,.card23,.card24 {
+        display: none;
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+    .card3,.card4,.card13,.card14,.card23,.card24 {
+        display: none;
+    }
+ }
+
+/*  XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }*/
+</style> 

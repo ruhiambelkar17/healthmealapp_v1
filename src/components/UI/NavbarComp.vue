@@ -18,19 +18,19 @@
 
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="Gallery.html">Gallery</a> -->
-                        <a class="nav-link"><router-link to="/GalleryComp">Gallery</router-link></a>
+                        <a class="nav-link"><router-link to="/Gallery">Gallery</router-link></a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link" ><router-link to="/AboutComp">About Us</router-link></a>
+                        <a class="nav-link" ><router-link to="/About">About Us</router-link></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" ><router-link to="/OrderComp">Order Online</router-link></a>
+                        <a class="nav-link" ><router-link to="/Order">Order Online</router-link></a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link"><router-link to="/ContactComp">Contact Us</router-link></a>
+                        <a class="nav-link"><router-link to="/Contact">Contact Us</router-link></a>
                     </li>
                 </ul>
             </div>

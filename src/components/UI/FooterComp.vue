@@ -67,7 +67,7 @@
                     <hr>
 
                     <li>
-                        <router-link to="/ContactComp"><button type="button" class="btn btn-light">Contact
+                        <router-link to="/Contact"><button type="button" class="btn btn-light">Contact
                                 US</button></router-link>
                     </li>
                 </ul>

@@ -18,10 +18,10 @@ const router= createRouter({
     history:createWebHistory(),
     routes:[
         {path:'/', component:HomeComp},
-        {path:'/GalleryComp', component:GalleryComp},
-        {path:'/OrderComp', component:OrderComp},
-        {path:'/AboutComp', component:AboutComp},
-        {path:'/ContactComp', component:ContactComp},
+        {path:'/Gallery', component:GalleryComp},
+        {path:'/Order', component:OrderComp},
+        {path:'/About', component:AboutComp},
+        {path:'/Contact', component:ContactComp},
        // {path:'/GalleryComp', component:GalleryComp},
         
     ]
