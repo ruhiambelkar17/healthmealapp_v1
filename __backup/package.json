@@ -1,5 +1,5 @@
 {
-  "name": "healthy-meal-web",
+  "name": "healthymeal-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

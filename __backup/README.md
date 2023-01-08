@@ -1,4 +1,4 @@
-# healthy-meal-web
+# healthymeal-app
 
 ## Project setup
 ```
