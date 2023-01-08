@@ -99,7 +99,7 @@ export default {
 
 
     <div class=" card_container ">
-        <div class="mt-5 ">
+        <div class="mt-5 card1">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm1.jpg">
@@ -108,7 +108,7 @@ export default {
             </div>
         </div>
 
-        <div class="mt-5 ml-5">
+        <div class="mt-5 ml-5 card2">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm2.jpg">
@@ -117,7 +117,7 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="mt-5 ml-5">
+        <div class="mt-5 ml-5 card3">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm3.jpg">
@@ -127,7 +127,7 @@ export default {
             </div>
         </div>
 
-        <div class="mt-5 ml-5">
+        <div class="mt-5 ml-5 card4">
             <div class="card shadow">
                 <div class="card-body">
                     <img src="../assets/Images/hm4.jpg">
@@ -250,6 +250,32 @@ hr {
     justify-content: center;
 }
 
+@media (max-width: 576px) { 
+    .card2,.card3,.card4 {
+        display: none;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .card2,.card3,.card4 {
+        display: none;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .card3,.card4 {
+        display: none;
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+ /* @media (max-width: 1200px) { 
+    .card4 {
+        display: none;
+    }
+ }  */
 
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
