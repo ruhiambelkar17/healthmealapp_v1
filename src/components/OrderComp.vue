@@ -4,7 +4,7 @@
 
     <!--Main body-->
     <div class="order_container">
-        <h1>Order online</h1>
+        <h1>Order Online</h1>
     </div>
 
     <div class="online_partner mt-5 ">
@@ -14,11 +14,11 @@
                         src="../assets/Images/Swiggy.jpg"> </a>
             </div>
             <div class="col-md-4 zoom">
-                <a href="https://www.zomato.com"><img class="img-fluid rounded-circle shadow"
+                <a href="https://www.zomato.com/mumbai/healthy-meals-chandivali/photos"><img class="img-fluid rounded-circle shadow"
                         src="../assets/Images/zomato.png"> </a>
             </div>
             <div class="col-md-4 zoom">
-                <a href="https://magicpin.in"><img class="img-fluid rounded-circle shadow"
+                <a href="https://magicpin.in/Mumbai/Chandivali/Restaurant/Healthy-Meals/store/5c7b8c/?utm_source=searchlandingpage"><img class="img-fluid rounded-circle shadow"
                         src="../assets/Images/magicpin.jpg"> </a>
             </div>
         </div>

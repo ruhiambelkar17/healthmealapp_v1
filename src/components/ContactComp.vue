@@ -3,7 +3,7 @@
     <nav-comp></nav-comp>
     <!--Main body-->
     <div class="contact_container">
-        <h1>Contact US</h1>
+        <h1>Contact Us</h1>
     </div>
 
     <div class="container-fluid mt-5 ">
