@@ -58,10 +58,12 @@
 
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                <dialog-box v-if="isSubmitted" class="d-flex justify-content-center align-items-center">
+                <transition name="dialog" >
+                    <dialog-box v-if="isSubmitted" class="d-flex justify-content-center align-items-center">
                     <h3>Form Submitted Successfully!!</h3>
                     <button id="dialog_btn" type="button" class="btn btn-light rounded shadow text-center " @click="DialogOk">Ok</button>
                 </dialog-box>
+                </transition>
             </div>
 
         </div>
@@ -172,4 +174,39 @@ form hr {
     margin-top: 20px;
     
 }
+
+.dialog-enter-from {
+    opacity: 0;
+     transform: translateY(-50px) scale(0.2); 
+}
+
+.dialog-enter-active {
+    opacity:0.5;
+    transition:all  0.3s ease-out;   
+}
+
+.dialog-enter-to {
+    opacity: 1;
+     transform: translateY(0px) scale(1);    
+}
+
+.dialog-leave-from {
+    opacity: 1;
+     transform: translateY(0px) scale(1);    
+}
+
+.dialog-leave-active {
+    opacity:0.5;
+    transition:all  0.3s ease-in;   
+}
+
+.dialog-leave-to {
+    opacity: 0;
+     transform: translateY(-50px) scale(0.2); 
+}
+    
+   
+
+
+
 </style>

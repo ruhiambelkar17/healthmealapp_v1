@@ -1,10 +1,11 @@
 <template>
-    <dialog open class=" d-flex justify-content-center shadow rounded">
+    
+        <dialog open class=" d-flex justify-content-center shadow rounded">
         <slot>
-       
-    </slot>
-    </dialog>
+        </slot>
+        </dialog>
 
+    
 </template>
 
 <script>
@@ -20,6 +21,8 @@ dialog {
     flex-direction: column;
     /* opacity: 0.5; */
 }
+
+
 
 
 
