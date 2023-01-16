@@ -1,10 +1,10 @@
 <template>
-    <transition name="dialog" >
+    
         <dialog open class=" d-flex justify-content-center shadow rounded">
-        <slot>
-        </slot>
+            <slot>
+            </slot>
         </dialog>
-    </transition>
+    
     
 </template>
 
@@ -22,35 +22,7 @@ dialog {
     /* opacity: 0.5; */
 }
 
-.dialog-enter-from {
-    opacity: 0;
-     transform: translateY(-50px) scale(0.2); 
-}
 
-.dialog-enter-active {
-    opacity:0.5;
-    transition:all  0.3s ease-out;   
-}
-
-.dialog-enter-to {
-    opacity: 1;
-     transform: translateY(0px) scale(1);    
-}
-
-.dialog-leave-from {
-    opacity: 1;
-     transform: translateY(0px) scale(1);    
-}
-
-.dialog-leave-active {
-    opacity:0.5;
-    transition:all  0.3s ease-in;   
-}
-
-.dialog-leave-to {
-    opacity: 0;
-     transform: translateY(-50px) scale(0.2); 
-}
     
    
 
