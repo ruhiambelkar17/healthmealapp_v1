@@ -9,6 +9,7 @@ import ContactComp from './components/ContactComp.vue'
 import NavComp from './components/UI/NavbarComp.vue'
 import DialogBox from './components/UI/DialogComp.vue'
 import FooterComp from './components/UI/FooterComp.vue'
+import CustomerFeedbacks from './components/CustomerFeedbacks.vue'
 
 
 
@@ -22,7 +23,7 @@ const router= createRouter({
         {path:'/Order', component:OrderComp},
         {path:'/About', component:AboutComp},
         {path:'/Contact', component:ContactComp},
-       // {path:'/GalleryComp', component:GalleryComp},
+       {path:'/feedbacks', component:CustomerFeedbacks},
         
     ]
 })
@@ -38,6 +39,8 @@ app.component('home-comp',HomeComp);
 app.component('nav-comp',NavComp);
 app.component('dialog-box',DialogBox);
 app.component('footer-comp',FooterComp);
+app.component('customer-feedbacks',CustomerFeedbacks);
+
 
 
 app.mount('#app');
