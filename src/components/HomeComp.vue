@@ -158,7 +158,7 @@ export default {
 
 <style>
 .img_container img {
-    width: 100%;
+    width: 75%;
     height: 600px;
     display: block;
     margin-left: auto;
