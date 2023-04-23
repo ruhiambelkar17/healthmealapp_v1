@@ -1,5 +1,5 @@
 <template>
-    <button @click="sendEmail">send</button>
+    <!-- <button @click="sendEmail">send</button> -->
     <!--Navbar Comp-->
     <nav-comp></nav-comp>
     <!--Main body-->
