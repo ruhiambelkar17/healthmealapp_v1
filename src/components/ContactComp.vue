@@ -1,4 +1,5 @@
 <template>
+    <button @click="sendEmail">send</button>
     <!--Navbar Comp-->
     <nav-comp></nav-comp>
     <!--Main body-->
@@ -58,14 +59,15 @@
 
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                <transition name="dialog" >
+                <transition name="dialog">
                     <dialog-box v-if="isSubmitted" class="d-flex justify-content-center align-items-center">
-                    <div>
-                        <h3>Form Submitted Successfully!!</h3>
-                        <button id="dialog_btn" type="button" class="btn btn-light rounded shadow text-center " @click="DialogOk">Ok</button>
-                    </div>
-                </dialog-box>
-            </transition>
+                        <div>
+                            <h3>Form Submitted Successfully!!</h3>
+                            <button id="dialog_btn" type="button" class="btn btn-light rounded shadow text-center "
+                                @click="DialogOk">Ok</button>
+                        </div>
+                    </dialog-box>
+                </transition>
             </div>
 
         </div>
@@ -77,10 +79,10 @@
     <!--Footer-->
     <footer-comp></footer-comp>
     <!-- End of .container -->
-
 </template>
 
 <script>
+import  Email  from '@/assets/smtp/smtp.js'
 export default {
     data() {
         return {
@@ -94,6 +96,19 @@ export default {
         }
     },
     methods: {
+        sendEmail() {
+            Email.send(
+                {
+                    Host: "smtp.gmail.com",
+                    Username: "education2.0@arsquare.dev",
+                    Password: "zwbeaidnjyeflazi",
+                    To: 'sufiyan0budye17@gmail.com',
+                    From: 'education2.0@arsquare.dev',// 'ruhiambelkar17@gmail.com',
+                    Subject: 'Thank you for contacting us ...!',
+                    Body: 'Your request has been recorded'
+                }
+            ).then(() => { alert('Form submitted') }).catch(err=>alert(err))
+        },
         SubmitFeedback() {
             if (this.name === '' && this.email === '' && this.message === '') {
                 alert('Error!')
@@ -132,7 +147,7 @@ export default {
 
             }
         },
-        DialogOk(){
+        DialogOk() {
             this.isSubmitted = false;
         }
     }
@@ -174,38 +189,36 @@ form hr {
     width: 80px;
     border: 1px solid grey;
     margin-top: 20px;
-    
+
 }
 
 .dialog-enter-from {
     opacity: 0;
-     transform: translateY(-50px) scale(0.2); 
+    transform: translateY(-50px) scale(0.2);
 }
 
 .dialog-enter-active {
-    opacity:0.5;
-    transition:all  0.3s ease-out;   
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
 }
 
 .dialog-enter-to {
     opacity: 1;
-     transform: translateY(0px) scale(1);    
+    transform: translateY(0px) scale(1);
 }
 
 .dialog-leave-from {
     opacity: 1;
-     transform: translateY(0px) scale(1);    
+    transform: translateY(0px) scale(1);
 }
 
 .dialog-leave-active {
-    opacity:0.5;
-    transition:all  0.3s ease-in;   
+    opacity: 0.5;
+    transition: all 0.3s ease-in;
 }
 
 .dialog-leave-to {
     opacity: 0;
-     transform: translateY(-50px) scale(0.2); 
+    transform: translateY(-50px) scale(0.2);
 }
-
-
 </style>
